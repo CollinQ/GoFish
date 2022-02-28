@@ -1,0 +1,10 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/collinqian/Desktop/GitHub/GoFish'
+g++ -Wall -Wno-uninitialized   -c -o tests.o tests.cpp
+g++ -Wall -Wno-uninitialized   -c -o cards.o cards.cpp
+g++ -Wall -Wno-uninitialized   -c -o utility.o utility.cpp
+g++ -Wall -Wno-uninitialized  tests.o cards.o utility.o -o tests
+g++ -Wall -Wno-uninitialized   -c -o main.o main.cpp
+g++ -Wall -Wno-uninitialized  main.o cards.o utility.o -o game
+make: Leaving directory `/Users/collinqian/Desktop/GitHub/GoFish'
+ 
